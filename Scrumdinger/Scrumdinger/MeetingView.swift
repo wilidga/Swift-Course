@@ -13,7 +13,7 @@ struct MeetingView: View {
             ProgressView(value: 5, total:15)
             
             HStack{
-                
+
                 VStack(alignment: .leading) {
                     Text("Seconds Elapsed")
                         .font(.caption)
@@ -27,10 +27,10 @@ struct MeetingView: View {
                     Label("600", systemImage: "hourglass.tophalf.fill")
                 }
             }
-            accessibilityElement(children: .ignore)
+            .accessibilityElement(children: .ignore)
             .accessibilityLabel("Time remaining")
             .accessibilityValue("10 minutes")
-            
+
             Circle()
                 .strokeBorder(lineWidth: 24)
             HStack {
